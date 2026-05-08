@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM.FORM</title>
+    </head>
+
+    <body>
+
+        <form>
+
+            <h2>Pengisian Form</h2>
+
+            <label for="nama">Nama:</label>
+            <br>
+            <input type="text" id="nama" name="nama" placeholder="contoh : budi santoso">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="email@coontoh.com">
+            <br><br>
+
+            <label for="umur">Umur:</label>
+            <br>
+            <input type="number" id="umur" name="umur" min="1" max="100" placeholder="23">
+            <br><br>
+
+            <label for="tgl">Tanggal lahir:</label>
+            <br>
+            <input type="date" id="tgl" name="tgl" placeholder="dd/mm/yyyy">
+            <br><br>
+
+            <label for="notlp">Nomor telepon:</label>
+            <br>
+            <input type="tel" id="notlp" name="notlp" placeholder="08xx-xxxx-xxxx">
+            <br><br>
+
+            <h2>Pilihan</h2>
+
+            <label for="kota">Kota:</label>
+            <br>
+            <select id="kota" name="kota">
+                <option value="">-- Pilih Kota --</option>
+                <option value="sby">Surabaya</option>
+                <option value="bwi">Banyuwangi</option>
+                <option value="mlg">Malang</option>
+                <option value="jkt">Jakarta</option>
+            </select>
+            <br><br>
+
+            <label>Jenis kelamin:</label>
+            <br>
+            <input type="radio" id="laki" name="gander" value="l">
+            <label for="laki">laki-laki</label>
+            <input type="radio" id="pr" name="gander" value="p">
+            <label for="pr">perempuan</label>
+            <br><br>
+
+            <label >Hobi:</label>
+            <br>
+            <input type="checkbox" id="baca" name="hobi" value="baca">
+            <label for="baca">Membaca</label>
+            <br>
+            <input type="checkbox" id="musik" name="hobi" value="musik">
+            <label for="musik">Musik</label>
+            <br>
+            <input type="checkbox" id="coding" name="hobi" value="coding">
+            <label for="coding">Coding</label>
+            <br>
+            <input type="checkbox" id="olahraga" name="hobi" value="olahraga">
+            <label for="olahraga">Olahraga</label>
+            <br><br>
+
+            <h2>Input lainnya</h2>
+            <br>
+
+            <label for="yoi">Nilai kepuasan:</label>
+            <br>
+            <input type="range" id="yoi" name="nilai" min="1" max="100" value="70" >
+            <br><br>
+
+            <label for="warna">Warna favorit:</label>
+            <br>
+            <input type="color" id="warna" name="warna">
+            <br><br>
+
+            <label for="foto">Upload foto</label>
+            <br>
+            <input type="file" id="foto" name="foto" accept="image/*">
+            <br><br>
+
+            <label for="pesan">Pesan / catatan:</label>
+            <br>
+            <textarea id="pesan" name="pesan" rows="4" cols="40" placeholder="Tulis di sini....."></textarea>
+            <br><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+        
+    </body>
+
+</html>
