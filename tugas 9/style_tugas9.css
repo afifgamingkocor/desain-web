@@ -1,0 +1,744 @@
+/* ======================================
+   GOOGLE FONT
+====================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ======================================
+   RESET
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f8fafc;
+
+    color:#1e293b;
+
+    overflow-x:hidden;
+
+}
+
+
+/* ======================================
+   NAVBAR
+====================================== */
+
+.navbar{
+
+    background:#0f172a !important;
+
+    padding:18px 0;
+
+    transition:.4s;
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:18px;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#38bdf8 !important;
+
+}
+
+
+/* ======================================
+   HERO
+====================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #0ea5e9
+    );
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+/* efek lingkaran */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    top:-120px;
+
+    right:-120px;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:50%;
+
+    bottom:-90px;
+
+    left:-90px;
+
+}
+
+
+/* ======================================
+   HERO TEXT
+====================================== */
+
+.hero h1{
+
+    font-size:60px;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.hero span{
+
+    color:#fde047;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+
+/* ======================================
+   BUTTON
+====================================== */
+
+.btn-primary{
+
+    background:#1d4ed8;
+
+    border:none;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    transition:.4s;
+
+}
+
+.btn-primary:hover{
+
+    background:#1e40af;
+
+    transform:translateY(-5px);
+
+}
+
+.btn-outline-light{
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    transition:.4s;
+
+}
+
+.btn-outline-light:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/* ======================================
+   HERO IMAGE
+====================================== */
+
+.hero-image{
+
+    width:90%;
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+
+/* ======================================
+   SECTION
+====================================== */
+
+section{
+
+    padding:90px 0;
+
+}
+
+section h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+section p{
+
+    color:#64748b;
+
+}
+
+
+/* ======================================
+   FEATURE BOX
+====================================== */
+
+.feature-box{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.feature-box:hover{
+
+    transform:
+
+    translateY(-10px);
+
+}
+
+.feature-box i{
+
+    font-size:55px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ======================================
+   SERVICE CARD
+====================================== */
+
+.service-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 12px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.service-card:hover{
+
+    transform:
+
+    translateY(-12px);
+
+}
+
+.service-card i{
+
+    font-size:60px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.service-card h4{
+
+    margin-bottom:15px;
+
+}
+
+/* ======================================
+   PROCESS SECTION
+====================================== */
+
+.process-box{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    height:100%;
+
+}
+
+.process-box:hover{
+
+    transform:
+        translateY(-10px);
+
+}
+
+.process-box i{
+
+    font-size:55px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.process-box h5{
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+
+/* ======================================
+   SKILL
+====================================== */
+
+.progress{
+
+    height:26px;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    background:#e2e8f0;
+
+}
+
+.progress-bar{
+
+    font-weight:600;
+
+    animation:progress 2s ease;
+
+}
+
+
+/* ======================================
+   PORTFOLIO
+====================================== */
+
+.portfolio-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.portfolio-card:hover{
+
+    transform:
+        translateY(-10px);
+
+}
+
+.portfolio-card img{
+
+    width:100%;
+
+    transition:.5s;
+
+}
+
+.portfolio-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.portfolio-card h4{
+
+    padding:20px;
+
+    font-weight:600;
+
+}
+
+
+/* ======================================
+   STATISTIC
+====================================== */
+
+.bg-primary{
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #0ea5e9
+        ) !important;
+
+}
+
+.bg-primary h1{
+
+    font-size:52px;
+
+    font-weight:700;
+
+}
+
+.bg-primary p{
+
+    color:white;
+
+}
+
+
+/* ======================================
+   FAQ
+====================================== */
+
+.accordion-item{
+
+    border:none;
+
+    margin-bottom:15px;
+
+    border-radius:15px !important;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.accordion-button{
+
+    font-weight:600;
+
+}
+
+.accordion-button:not(.collapsed){
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+/* ======================================
+   CONTACT
+====================================== */
+
+form{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.form-control{
+
+    border-radius:10px;
+
+    padding:14px;
+
+}
+
+.form-control:focus{
+
+    box-shadow:none;
+
+    border-color:#2563eb;
+
+}
+
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:70px 0;
+
+}
+
+footer h3{
+
+    font-weight:700;
+
+}
+
+footer p{
+
+    color:#cbd5e1;
+
+}
+
+
+/* ======================================
+   ANIMATION
+====================================== */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes progress{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media(max-width:992px){
+
+.hero{
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:46px;
+
+}
+
+.hero-image{
+
+    margin-top:50px;
+
+    width:70%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+    min-height:auto;
+
+    padding:100px 0;
+
+}
+
+.hero h1{
+
+    font-size:36px;
+
+}
+
+section{
+
+    padding:70px 0;
+
+}
+
+section h2{
+
+    font-size:32px;
+
+}
+
+.feature-box,
+.service-card,
+.process-box{
+
+    margin-bottom:20px;
+
+}
+
+.navbar-brand{
+
+    font-size:24px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+
+    font-size:30px;
+
+}
+
+.hero p{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    width:100%;
+
+    margin-bottom:15px;
+
+}
+
+.hero-image{
+
+    width:90%;
+
+}
+
+.bg-primary h1{
+
+    font-size:36px;
+
+}
+
+}
